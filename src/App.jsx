@@ -19,7 +19,7 @@ function App() {
         <Route path='/' element={loading ? <Loadings /> : <Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/cocktail/:id' element={<SingleCocktail />}></Route>
-        <Route path='*' element={<Error />} />
+        <Route element={<Error />} />
       </Routes>
     </>
   )
